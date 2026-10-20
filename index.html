@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- Declara que el documento usa la versión HTML5. -->
+<html lang="es">
+<head>
+    <!-- Define la codificación para mostrar correctamente acentos y otros caracteres. -->
+    <meta charset="UTF-8">
+    <!-- Adapta el ancho y la escala de la página al dispositivo donde se abre. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Texto que aparece como título de la pestaña del navegador. -->
+    <title>Instituto Nacional Ernesto Flores</title>
+    <!-- Carga los estilos visuales y la distribución definidos en style.css. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal: organiza las secciones del sitio mediante la cuadrícula CSS. -->
+    <main class="contenedor">
+        <!-- Encabezado con el logo, el nombre del instituto y el menú principal. -->
+        <div class="bloque bloque-1">
+            <header class="barra-navegacion">
+                <!-- La marca lleva al inicio; la imagen usa la ruta del archivo del logo. -->
+                <a class="marca-institucional" href="#inicio" aria-label="Nombre de la institución, ir al inicio">
+                    <img class="espacio-logo" src="imagenes/Logo.webp" alt="Logo del instituto">
+                    <!-- Nombre y lema que acompañan al logo. -->
+                    <span class="nombre-institucion-texto">
+                        <strong>Instituto Nacional Ernesto Flores</strong>
+                        <small>Comunidad educativa</small>
+                    </span>
+                </a>
+                <!-- Navegación: cada enlace apunta al id de una sección de esta misma página. -->
+                <nav class="menu-navegacion" aria-label="Navegación principal">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#ofertas">Ofertas académicas</a></li>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#valores">Valores</a></li>
+                        <li><a href="#calendarios">Calendarios</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!-- Panel lateral con una introducción a las noticias y un enlace a las destacadas. -->
+        <section class="bloque bloque-2" id="noticias" aria-labelledby="news-title">
+            <h2 id="news-title">Inicio de noticias</h2>
+            <p>Entérate de las novedades y actividades de nuestra comunidad.</p>
+            <a href="#noticias-destacadas">Ver noticias <span aria-hidden="true">→</span></a>
+        </section>
+        <!-- Portada principal: presenta un mensaje de bienvenida y una descripción breve. -->
+        <section class="bloque bloque-3 portada" id="inicio" aria-label="Banner principal">
+            <div class="contenido-portada">
+                <p class="etiqueta-portada">BIENVENIDOS</p>
+                <h1>Aprende, crece<br>e inspira tu futuro.</h1>
+                <p class="descripcion-portada">Descubre las noticias y oportunidades de nuestra comunidad educativa.</p>
+            </div>
+            <span class="adorno-portada" aria-hidden="true">✳</span>
+        </section>
+        <!-- Panel de información que contiene las tarjetas de calendario y contacto. -->
+        <section class="bloque bloque-4 panel-contenido" id="calendarios" aria-labelledby="calendar-title">
+            <!-- Tarjeta con información sobre fechas y actividades académicas. -->
+            <article class="tarjeta-informacion">
+                <p class="etiqueta-seccion">ORGANIZA TU CICLO</p>
+                <h2 id="calendar-title">Calendarios</h2>
+                <p>Consulta las fechas importantes y actividades académicas.</p>
+            </article>
+            <!-- Tarjeta con información de contacto; su id permite enlazarla desde el menú. -->
+            <article class="tarjeta-informacion" id="contactos">
+                <p class="etiqueta-seccion">ESTAMOS PARA AYUDARTE</p>
+                <h2>Contactos</h2>
+                <p>Encuentra los canales de comunicación de la institución.</p>
+            </article>
+        </section>
+        <!-- Resumen de las opciones de estudio y enlace a esta sección. -->
+        <section class="bloque bloque-5 panel-contenido" id="ofertas" aria-labelledby="offers-title">
+            <div>
+                <p class="etiqueta-seccion">CONOCE TUS OPCIONES</p>
+                <h2 id="offers-title">Ofertas académicas</h2>
+                <p>Explora los programas y oportunidades de formación.</p>
+            </div>
+            <a href="#ofertas">Ver opciones <span aria-hidden="true">→</span></a>
+        </section>
+        <!-- Sección institucional: presenta misión, visión y valores en artículos separados. -->
+        <section class="bloque bloque-6 panel-contenido identidad-contenido" aria-label="Información institucional">
+            <!-- Misión institucional. -->
+            <article id="mision">
+                <p class="etiqueta-seccion">NUESTRO PROPÓSITO</p>
+                <h2>Misión</h2>
+                <p>Somos un centro educativo líder en la investigación, profesionalización y ejecución de proyectos, basado en la planificación por competencias, para mejorar su entorno ambiental, calidad, capacidad crítica y reflexiva, y transformar la sociedad, logrando una excelencia académica, calidad humana y la preparación para la vida.</p>
+            </article>
+            <!-- Visión institucional. -->
+            <article id="vision">
+                <p class="etiqueta-seccion">HACIA DÓNDE VAMOS</p>
+                <h2>Visión</h2>
+                <p>Ser un centro educativo líder en la organización, ambiente agradable, con tecnología innovadora, alto rendimiento académico, excelente actitud diciplinaria y competente en la investigación, profesionalización y ejecución de proyectos funcionales</p>
+            </article>
+            <!-- Valores que orientan a la comunidad educativa. -->
+            <article id="valores">
+                <p class="etiqueta-seccion">LO QUE NOS GUÍA</p>
+                <h2>Valores</h2>
+                <p>Principios que orientan nuestra comunidad.</p>
+            </article>
+        </section>
+        <!-- Noticias destacadas: cada artículo representa una noticia independiente. -->
+        <section class="bloque bloque-7 panel-contenido noticias-destacadas" id="noticias-destacadas" aria-labelledby="featured-title">
+            <!-- Título que identifica el conjunto de noticias. -->
+            <div class="encabezado-noticias">
+                <p class="etiqueta-seccion"></p>
+                <h2 id="featured-title">Noticias destacadas</h2>
+            </div>
+            <!-- Tarjeta para la primera noticia; reemplaza el título y texto por su contenido. -->
+            <article class="noticia">
+                <p class="etiqueta-seccion">NOTICIA 1</p>
+                <h3>Título de la noticia 1</h3>
+                <p>Agrega aquí una breve descripción de la noticia.</p>
+            </article>
+            <!-- Tarjeta para la segunda noticia. -->
+            <article class="noticia">
+                <p class="etiqueta-seccion">NOTICIA 2</p>
+                <h3>Título de la noticia 2</h3>
+                <p>Agrega aquí una breve descripción de la noticia.</p>
+            </article>
+            <!-- Tarjeta para la tercera noticia. -->
+            <article class="noticia">
+                <p class="etiqueta-seccion">NOTICIA 3</p>
+                <h3>Título de la noticia 3</h3>
+                <p>Agrega aquí una breve descripción de la noticia.</p>
+            </article>
+            <!-- Tarjeta para la cuarta noticia. -->
+            <article class="noticia">
+                <p class="etiqueta-seccion">NOTICIA 4</p>
+                <h3>Título de la noticia 4</h3>
+                <p>Agrega aquí una breve descripción de la noticia.</p>
+            </article>
+        </section>
+    </main>
+    <!-- Pie de página: créditos, información del instituto y enlaces de acceso rápido. -->
+    <footer class="pie-de-pagina">
+        <!-- Créditos o nombres de las personas responsables del sitio. -->
+        <section class="seccion-pie" aria-labelledby="copyright-title">
+            <h2 id="copyright-title">Derechos de autor</h2>
+            <p>Evelyn Yasmin Lobo Hernández</p>
+            <p>Karen Marcela Vasquez Rodriguez</p>
+        </section>
+        <!-- Espacio para una descripción breve de la institución. -->
+        <section class="seccion-pie" id="sobre-nosotros" aria-labelledby="about-title">
+            <h2 id="about-title">Sobre nosotros</h2>
+            <p>Espacio para presentar brevemente a la institución.</p>
+        </section>
+        <!-- Enlaces de navegación repetidos para facilitar el acceso desde el pie. -->
+        <nav class="seccion-pie enlaces-pie" aria-labelledby="footer-links-title">
+            <h2 id="footer-links-title">Enlaces</h2>
+            <a href="#inicio">Inicio</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#ofertas">Ofertas académicas</a>
+            <a href="#contactos">Contactos</a>
+        </nav>
+    </footer>
+</body>
+</html>
