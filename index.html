@@ -22,7 +22,7 @@
                     <img class="espacio-logo" src="imagenes/Logo.webp" alt="Logo del instituto">
                     <!-- Nombre y lema que acompañan al logo. -->
                     <span class="nombre-institucion-texto">
-                        <strong>Instituto Nacional Ernesto Flores</strong>
+                        <strong>Instituto Nacional "Ernesto Flores"</strong>
                         <small>Comunidad educativa</small>
                     </span>
                 </a>
@@ -35,40 +35,81 @@
                         <li><a href="#mision">Misión</a></li>
                         <li><a href="#vision">Visión</a></li>
                         <li><a href="#valores">Valores</a></li>
+                        <li><a href="#ventajas">Ventajas</a></li>
                         <li><a href="#calendarios">Calendarios</a></li>
                         <li><a href="#contactos">Contactos</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
-        <!-- Panel lateral con una introducción a las noticias y un enlace a las destacadas. -->
+        <!-- Espacios para publicar noticias y avisos de la comunidad. -->
         <section class="bloque bloque-2" id="noticias" aria-labelledby="news-title">
-            <h2 id="news-title">Inicio de noticias</h2>
-            <p>Entérate de las novedades y actividades de nuestra comunidad.</p>
-            <a href="#noticias-destacadas">Ver noticias <span aria-hidden="true">→</span></a>
+            <h2 id="news-title">Noticias</h2>
+            <p>El 28 de agosto se realizó un evento muy importante que fue la elección y coronación de la reina y princesa de independencia.</p>
+            <img class="imagen-noticia" src="imagenes/Reina miss.jpeg" alt="Reina de independencia">
+            <img class="imagen-noticia" src="imagenes/Princesa miss.jpeg" alt="Princesa de independencia">
+            <p>El 14 de octubre se realizó un simulacro escolar para preparar a los estudiantes por cualquier emergencia.</p>
         </section>
-        <!-- Portada principal: presenta un mensaje de bienvenida y una descripción breve. -->
+        <!-- Portada principal: presenta el título de la institución y el carrusel. -->
         <section class="bloque bloque-3 portada" id="inicio" aria-label="Banner principal">
             <div class="contenido-portada">
-                <p class="etiqueta-portada">BIENVENIDOS</p>
-                <h1>Aprende, crece<br>e inspira tu futuro.</h1>
-                <p class="descripcion-portada">Descubre las noticias y oportunidades de nuestra comunidad educativa.</p>
+                <h1>Instituto Nacional "Ernesto Flores"</h1>
+            </div>
+            <div class="carrusel-container">
+                <input type="radio" name="carrusel-control" id="slide-1">
+                <input type="radio" name="carrusel-control" id="slide-2">
+                <input type="radio" name="carrusel-control" id="slide-3">
+                <input type="radio" name="carrusel-control" id="slide-4">
+                <input type="radio" name="carrusel-control" id="slide-5">
+                <input type="radio" name="carrusel-control" id="slide-6">
+                <input type="radio" name="carrusel-control" id="slide-7">
+                <div class="carrusel-slides">
+                    <div class="slide"><img src="imagenes/instituto 1.webp" alt="instituto 1"></div>
+                    <div class="slide"><img src="imagenes/instituto 2.webp" alt="instituto 2"></div>
+                    <div class="slide"><img src="imagenes/instituto 3.webp" alt="instituto 3"></div>
+                    <div class="slide"><img src="imagenes/instituto 4.webp" alt="instituto 4"></div>
+                    <div class="slide"><img src="imagenes/instituto 5.jpeg" alt="instituto 5"></div>
+                    <div class="slide"><img src="imagenes/INEF 1.jpeg" alt="INEF 1"></div>
+                    <div class="slide"><img src="imagenes/INEF 8.jpeg" alt="INEF 8"></div>
+                </div>
+                <div class="carrusel-navegacion">
+                    <label for="slide-1" class="nav-dot"></label>
+                    <label for="slide-2" class="nav-dot"></label>
+                    <label for="slide-3" class="nav-dot"></label>
+                    <label for="slide-4" class="nav-dot"></label>
+                    <label for="slide-5" class="nav-dot"></label>
+                    <label for="slide-6" class="nav-dot"></label>
+                    <label for="slide-7" class="nav-dot"></label>
+                </div>
             </div>
             <span class="adorno-portada" aria-hidden="true">✳</span>
         </section>
-        <!-- Panel de información que contiene las tarjetas de calendario y contacto. -->
-        <section class="bloque bloque-4 panel-contenido" id="calendarios" aria-labelledby="calendar-title">
-            <!-- Tarjeta con información sobre fechas y actividades académicas. -->
-            <article class="tarjeta-informacion">
-                <p class="etiqueta-seccion">ORGANIZA TU CICLO</p>
-                <h2 id="calendar-title">Calendarios</h2>
-                <p>Consulta las fechas importantes y actividades académicas.</p>
+        <!-- Panel de calendario y contacto, enlazados desde el menú principal. -->
+        <section class="bloque bloque-4 panel-contenido" id="calendarios" aria-label="Calendarios e información de contacto">
+            <article class="tarjeta-informacion tarjeta-calendario" aria-labelledby="calendar-title">
+                <div class="encabezado-calendario">
+                    <p class="etiqueta-seccion">ORGANIZA TU CICLO</p>
+                    <h2 id="calendar-title">Calendarios</h2>
+                </div>
+                <div class="evento-calendario" aria-label="Prueba Avanzo, 27 y 28 de octubre">
+                    <div class="fechas-evento" aria-hidden="true">
+                        <span class="fecha-evento">28</span>
+                        <span class="fecha-evento">29</span>
+                    </div>
+                    <div class="detalle-evento">
+                        <p class="etiqueta-evento">EVENTO IMPORTANTE</p>
+                        <h3>Prueba Avanzo</h3>
+                        <p>La prueba Avanzo se realizará los días 28 y 29 de octubre para todos los segundos años de bachillerato.</p>
+                    </div>
+                </div>
             </article>
-            <!-- Tarjeta con información de contacto; su id permite enlazarla desde el menú. -->
             <article class="tarjeta-informacion" id="contactos">
-                <p class="etiqueta-seccion">ESTAMOS PARA AYUDARTE</p>
+                <p class="etiqueta-seccion">CONTACTATE CON NOSOTROS</p>
                 <h2>Contactos</h2>
-                <p>Encuentra los canales de comunicación de la institución.</p>
+                <p><strong>Telefono:</strong> 2628-0241</p>
+                <p><strong>Correo Electrónico:</strong> 12524@clases.edu.sv</p>
+                <p><strong>Facebook:</strong> www.facebook.com/INEFOFICIAL</p>
+                <p><strong>WhatsApp:</strong> 7260-3747</p>
             </article>
         </section>
         <!-- Resumen de las opciones de estudio y enlace a esta sección. -->
@@ -76,9 +117,90 @@
             <div>
                 <p class="etiqueta-seccion">CONOCE TUS OPCIONES</p>
                 <h2 id="offers-title">Ofertas académicas</h2>
-                <p>Explora los programas y oportunidades de formación.</p>
+                <p>Aquí encontrarás todas las opciones de estudio disponibles que ofrece nuestra institución.</p>
             </div>
-            <a href="#ofertas">Ver opciones <span aria-hidden="true">→</span></a>
+            <div class="tarjetas-ofertas">
+                <article class="tarjeta-oferta">
+                    <h3>Bachillerato General</h3>
+                    <p>Esta modalidad ofrece una formación amplia en ciencias, humanidades y tecnología. El plan de estudios desarrolla conocimientos, métodos y habilidades que ayudan a construir nuevos aprendizajes y continuar estudios superiores.</p>
+                    <p><strong>Duración: 2 años</strong></p>
+                    <details class="foto-oferta">
+                        <summary class="enlace-foto-oferta">Ver fotos</summary>
+                        <div class="mini-carrusel">
+                            <input type="radio" name="foto-general" id="general-foto-1" checked>
+                            <input type="radio" name="foto-general" id="general-foto-2">
+                            <div class="mini-carrusel-fotos">
+                                <div class="mini-foto">Agrega aquí la imagen 1</div>
+                                <div class="mini-foto">Agrega aquí la imagen 2</div>
+                            </div>
+                            <div class="mini-carrusel-nav">
+                                <label for="general-foto-1" aria-label="Mostrar foto 1"></label>
+                                <label for="general-foto-2" aria-label="Mostrar foto 2"></label>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+                <article class="tarjeta-oferta">
+                    <h3>Bachillerato Técnico Administrativo Contable</h3>
+                    <p>El Bachillerato Técnico Vocacional Administrativo Contable, es un técnico de nivel medio donde adquieras conocimientos de los sistemas de control interno, Contabilidad, Administracion de los distintos sectores que conforman la economía, producto de exportación y desarrollo de actividades de su profecsion que le permitan desempeñarse en forma autónoma. Podrás desempeñarte en los siguientes ámbitos: Ventas, administración, contabilidad, caja, planillas, inventarios, call center, publicidad, control de bodegas, entre otras.</p>
+                    <p><strong>Duración: 3 años</strong></p>
+                    <details class="foto-oferta">
+                        <summary class="enlace-foto-oferta">Ver fotos</summary>
+                        <div class="mini-carrusel">
+                            <input type="radio" name="foto-contable" id="contable-foto-1" checked>
+                            <input type="radio" name="foto-contable" id="contable-foto-2">
+                            <div class="mini-carrusel-fotos">
+                                <div class="mini-foto">Agrega aquí la imagen 1</div>
+                                <div class="mini-foto">Agrega aquí la imagen 2</div>
+                            </div>
+                            <div class="mini-carrusel-nav">
+                                <label for="contable-foto-1" aria-label="Mostrar foto 1"></label>
+                                <label for="contable-foto-2" aria-label="Mostrar foto 2"></label>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+                <article class="tarjeta-oferta">
+                    <h3>Bachillerato Técnico en Desarrollo de Software</h3> 
+                    <p>En el Bachillerato Desarrollo de Software podrás desenvolverte en ls siguientes campos: venta de soluciones de sofware, soporte para mantenimiento de aplicaciones, capacitación para el desarrollo de software, control de calidad en pruebas de aplicaciones, además podrás desarrollar aplicaciones, además podrás desarrollar aplicaciones y páginas web, diseño grafico, utilización de impresoras 3D y otros.</p>
+                    <p><strong>Duración: 3 años</strong></p>
+                    <details class="foto-oferta">
+                        <summary class="enlace-foto-oferta">Ver fotos</summary>
+                        <div class="mini-carrusel">
+                            <input type="radio" name="foto-software" id="software-foto-1" checked>
+                            <input type="radio" name="foto-software" id="software-foto-2">
+                            <div class="mini-carrusel-fotos">
+                                <div class="mini-foto">Agrega aquí la imagen 1</div>
+                                <div class="mini-foto">Agrega aquí la imagen 2</div>
+                            </div>
+                            <div class="mini-carrusel-nav">
+                                <label for="software-foto-1" aria-label="Mostrar foto 1"></label>
+                                <label for="software-foto-2" aria-label="Mostrar foto 2"></label>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+                <article class="tarjeta-oferta">
+                    <h3>Bachillerato Agropecuario</h3>
+                    <p>Ofrece al estudiante conocimientos del agro en diferentes ámbitos: Cunícola, avícola, porcino, apicula, ornamentales, preparación de suelos, manejo de cultivos agroindustriales, almacenamiento, procesamiento y comercializacion de cultivos perennes, diseño y ejecución de proyectos, manejo de equipo y maquinaría agroindustrial, frutales, viiveros, huertos, procesamiento de alimentos, además se incentiva al uso de la tecnología.</p>
+                    <p><strong>Duración: 3 años</strong></p>
+                    <details class="foto-oferta">
+                        <summary class="enlace-foto-oferta">Ver fotos</summary>
+                        <div class="mini-carrusel">
+                            <input type="radio" name="foto-agropecuario" id="agro-foto-1" checked>
+                            <input type="radio" name="foto-agropecuario" id="agro-foto-2">
+                            <div class="mini-carrusel-fotos">
+                                <div class="mini-foto"><img src="imagenes/INEF 6.jpeg" alt="Imagen 6"></div>
+                                <div class="mini-foto"><img src="imagenes/INEF 4.jpeg" alt="Imagen 2"></div>
+                            </div>
+                            <div class="mini-carrusel-nav">
+                                <label for="agro-foto-1" aria-label="Mostrar foto 1"></label>
+                                <label for="agro-foto-2" aria-label="Mostrar foto 2"></label>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+            </div>
         </section>
         <!-- Sección institucional: presenta misión, visión y valores en artículos separados. -->
         <section class="bloque bloque-6 panel-contenido identidad-contenido" aria-label="Información institucional">
@@ -98,7 +220,28 @@
             <article id="valores">
                 <p class="etiqueta-seccion">LO QUE NOS GUÍA</p>
                 <h2>Valores</h2>
-                <p>Principios que orientan nuestra comunidad.</p>
+                <ul class="lista-valores">
+                    <li><strong>Respeto:</strong> Reconcemos y valoramos a cada persona, sus ideas y su forma de ser, cuidand también el entorno y las instalaciones del instituto.</li>
+                    <li><strong>Responsabilidad:</strong> Cumplimos con nuestros deberes de estudio y de trabajo, y respondemos por nuestras decisiones y acciones.</li>
+                    <li><strong>Honestidad:</strong> Actuamos con verdad y transparencia en lo que decimos y hacemos, dentro y fuera del aula.</li>
+                    <li><strong>Solidaridad:</strong> Nos apoyamos unos a otros y trabajamos en equipo para ayudar a quienes lo necesiten.</li>
+                    <li><strong>Disciplina:</strong> Practicamos el orden, la constancia y la puntualidad como base para alcanzar nuestras metas académicas y técnicas.</li>
+                </ul>
+            </article>
+            <!-- Ventajas institucionales; agrega aquí su descripción. -->
+            <article id="ventajas">
+                <p class="etiqueta-seccion">LO QUE NOS DISTINGUE</p>
+                <h2>Ventajas</h2>
+                <ul class="lista-ventajas">
+                    <li>Profesionales especializados.</li>
+                    <li>Horario accesible.</li>
+                    <li>Cancha de Basketball techada.</li>
+                    <li>Huertos Escolares.</li>
+                    <li>Campo Experimental para prácticas agropecuarias.</li>
+                    <li>Sala de procesamiento de alimentos.</li>
+                    <li>Acceso a Recursos Tecnológicos e Internet.</li>
+                    <li>Actividades culturales, sociales, deportivas y Extracurriculares.</li>
+                </ul>
             </article>
         </section>
         <!-- Noticias destacadas: cada artículo representa una noticia independiente. -->
@@ -111,26 +254,26 @@
             <!-- Tarjeta para la primera noticia; reemplaza el título y texto por su contenido. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 1</p>
-                <h3>Título de la noticia 1</h3>
-                <p>Agrega aquí una breve descripción de la noticia.</p>
+                <h3>Elección de la reina de los estudiantes</h3>
+                <p>El día 28 de agosto se realizó el evento de elección de la reina y princesa de los estudiantes.</p>
             </article>
             <!-- Tarjeta para la segunda noticia. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 2</p>
-                <h3>Título de la noticia 2</h3>
-                <p>Agrega aquí una breve descripción de la noticia.</p>
+                <h3>Simulacro escolar</h3>
+                <p>El día 14 de octubre se llevó a cabo el simulacro escolar para preparar a los estudiantes por si ocurre algún evento de emergencia.</p>
             </article>
             <!-- Tarjeta para la tercera noticia. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 3</p>
-                <h3>Título de la noticia 3</h3>
-                <p>Agrega aquí una breve descripción de la noticia.</p>
+                <h3>Prueba avanzo</h3>
+                <p>El día 28 y 29 de octubre se realizó la prueba avanzo para los estudiantes de segundo año de bachillerato.</p>
             </article>
             <!-- Tarjeta para la cuarta noticia. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 4</p>
-                <h3>Título de la noticia 4</h3>
-                <p>Agrega aquí una breve descripción de la noticia.</p>
+                <h3>Exámenes del cuarto periodo</h3>
+                <p>El día 3 de noviembre se iniciara con los examenes del cuarto periodo.</p>
             </article>
         </section>
     </main>
@@ -145,15 +288,27 @@
         <!-- Espacio para una descripción breve de la institución. -->
         <section class="seccion-pie" id="sobre-nosotros" aria-labelledby="about-title">
             <h2 id="about-title">Sobre nosotros</h2>
-            <p>Espacio para presentar brevemente a la institución.</p>
+            <p>Somos un centro educativo líder en la investigación y ejecución de proyectos. Busca mejorar el entorno amiental y la calidad de vida de nuestros estudiantes.</p>
         </section>
         <!-- Enlaces de navegación repetidos para facilitar el acceso desde el pie. -->
         <nav class="seccion-pie enlaces-pie" aria-labelledby="footer-links-title">
             <h2 id="footer-links-title">Enlaces</h2>
-            <a href="#inicio">Inicio</a>
-            <a href="#noticias">Noticias</a>
-            <a href="#ofertas">Ofertas académicas</a>
-            <a href="#contactos">Contactos</a>
+            <a class="enlace-plataforma" href="https://classroom.google.com/" target="_blank" rel="noopener noreferrer">
+                <img class="logo-enlace" src="imagenes/Logo classroom.png" alt="Logo de Google Classroom">
+                Google Classroom
+            </a>
+            <a class="enlace-plataforma" href="https://www.kira-learning.com/" target="_blank" rel="noopener noreferrer">
+                <img class="logo-enlace" src="imagenes/Logo kira.webp" alt="Logo de Kira Learning">
+                Kira Learning
+            </a>
+            <a class="enlace-plataforma" href="https://fictionexpress.com/" target="_blank" rel="noopener noreferrer">
+                <img class="logo-enlace" src="imagenes/Logo fiction express.jpg" alt="Logo de Fiction Express">
+                Fiction Express
+            </a>
+            <a class="enlace-plataforma" href="https://www.mined.gob.sv/siges/" target="_blank" rel="noopener noreferrer">
+                <img class="logo-enlace" src="imagenes/Logo mined.webp" alt="Logo de SIGES">
+                SIGES
+            </a>
         </nav>
     </footer>
 </body>
