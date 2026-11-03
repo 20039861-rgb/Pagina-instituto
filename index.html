@@ -28,17 +28,20 @@
                 </a>
                 <!-- Navegación: cada enlace apunta al id de una sección de esta misma página. -->
                 <nav class="menu-navegacion" aria-label="Navegación principal">
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#noticias">Noticias</a></li>
-                        <li><a href="#ofertas">Ofertas académicas</a></li>
-                        <li><a href="#mision">Misión</a></li>
-                        <li><a href="#vision">Visión</a></li>
-                        <li><a href="#valores">Valores</a></li>
-                        <li><a href="#ventajas">Ventajas</a></li>
-                        <li><a href="#calendarios">Calendarios</a></li>
-                        <li><a href="#contactos">Contactos</a></li>
-                    </ul>
+                    <details class="menu-movil">
+                        <summary aria-label="Abrir menú de navegación">☰</summary>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#noticias">Noticias</a></li>
+                            <li><a href="#ofertas">Ofertas académicas</a></li>
+                            <li><a href="#mision">Misión</a></li>
+                            <li><a href="#vision">Visión</a></li>
+                            <li><a href="#valores">Valores</a></li>
+                            <li><a href="#ventajas">Ventajas</a></li>
+                            <li><a href="#calendarios">Calendarios</a></li>
+                            <li><a href="#contactos">Contactos</a></li>
+                        </ul>
+                    </details>
                 </nav>
             </header>
         </div>
@@ -49,6 +52,7 @@
             <img class="imagen-noticia" src="imagenes/Reina miss.jpeg" alt="Reina de independencia">
             <img class="imagen-noticia" src="imagenes/Princesa miss.jpeg" alt="Princesa de independencia">
             <p>El 14 de octubre se realizó un simulacro escolar para preparar a los estudiantes por cualquier emergencia.</p>
+            <img class="imagen-noticia" src="imagenes/simulacro.jpeg" alt="Simulacro escolar">
         </section>
         <!-- Portada principal: presenta el título de la institución y el carrusel. -->
         <section class="bloque bloque-3 portada" id="inicio" aria-label="Banner principal">
@@ -63,13 +67,15 @@
                 <input type="radio" name="carrusel-control" id="slide-5">
                 <input type="radio" name="carrusel-control" id="slide-6">
                 <input type="radio" name="carrusel-control" id="slide-7">
+                <input type="radio" name="carrusel-control" id="slide-8">
                 <div class="carrusel-slides">
                     <div class="slide"><img src="imagenes/instituto 1.webp" alt="instituto 1"></div>
                     <div class="slide"><img src="imagenes/instituto 2.webp" alt="instituto 2"></div>
                     <div class="slide"><img src="imagenes/instituto 3.webp" alt="instituto 3"></div>
                     <div class="slide"><img src="imagenes/instituto 4.webp" alt="instituto 4"></div>
                     <div class="slide"><img src="imagenes/instituto 5.jpeg" alt="instituto 5"></div>
-                    <div class="slide"><img src="imagenes/INEF 1.jpeg" alt="INEF 1"></div>
+                    <div class="slide"><img src="imagenes/INEF 10.jpeg" alt="INEF 10"></div>
+                    <div class="slide"><img src="imagenes/INEF 11.jpeg" alt="INEF 11"></div>
                     <div class="slide"><img src="imagenes/INEF 8.jpeg" alt="INEF 8"></div>
                 </div>
                 <div class="carrusel-navegacion">
@@ -80,6 +86,7 @@
                     <label for="slide-5" class="nav-dot"></label>
                     <label for="slide-6" class="nav-dot"></label>
                     <label for="slide-7" class="nav-dot"></label>
+                    <label for="slide-8" class="nav-dot"></label>
                 </div>
             </div>
             <span class="adorno-portada" aria-hidden="true">✳</span>
@@ -126,12 +133,12 @@
                     <p><strong>Duración: 2 años</strong></p>
                     <details class="foto-oferta">
                         <summary class="enlace-foto-oferta">Ver fotos</summary>
-                        <div class="mini-carrusel">
+                        <div class="mini-carrusel carrusel-general">
                             <input type="radio" name="foto-general" id="general-foto-1" checked>
                             <input type="radio" name="foto-general" id="general-foto-2">
                             <div class="mini-carrusel-fotos">
-                                <div class="mini-foto">Agrega aquí la imagen 1</div>
-                                <div class="mini-foto">Agrega aquí la imagen 2</div>
+                                <div class="mini-foto"><img src="imagenes/General.jpeg" alt="Bachillerato General"></div>
+                                <div class="mini-foto"><img src="imagenes/General 2.jpeg" alt="Estudiantes de Bachillerato General"></div>
                             </div>
                             <div class="mini-carrusel-nav">
                                 <label for="general-foto-1" aria-label="Mostrar foto 1"></label>
@@ -150,8 +157,8 @@
                             <input type="radio" name="foto-contable" id="contable-foto-1" checked>
                             <input type="radio" name="foto-contable" id="contable-foto-2">
                             <div class="mini-carrusel-fotos">
-                                <div class="mini-foto">Agrega aquí la imagen 1</div>
-                                <div class="mini-foto">Agrega aquí la imagen 2</div>
+                                <div class="mini-foto"><img src="imagenes/Contador.jpeg" alt="Bachillerato Técnico Administrativo Contable"></div>
+                                <div class="mini-foto"><img src="imagenes/Contador 1.jpeg" alt="Estudiantes de Bachillerato Técnico Administrativo Contable"></div>
                             </div>
                             <div class="mini-carrusel-nav">
                                 <label for="contable-foto-1" aria-label="Mostrar foto 1"></label>
@@ -170,8 +177,8 @@
                             <input type="radio" name="foto-software" id="software-foto-1" checked>
                             <input type="radio" name="foto-software" id="software-foto-2">
                             <div class="mini-carrusel-fotos">
-                                <div class="mini-foto">Agrega aquí la imagen 1</div>
-                                <div class="mini-foto">Agrega aquí la imagen 2</div>
+                                <div class="mini-foto"><img src="imagenes/Software 2.jpeg" alt="Software 2"></div>
+                                <div class="mini-foto"><img src="imagenes/Software 3.jpeg" alt="Software 3"></div>
                             </div>
                             <div class="mini-carrusel-nav">
                                 <label for="software-foto-1" aria-label="Mostrar foto 1"></label>
@@ -273,7 +280,7 @@
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 4</p>
                 <h3>Exámenes del cuarto periodo</h3>
-                <p>El día 3 de noviembre se iniciara con los examenes del cuarto periodo.</p>
+                <p>El día 9 de noviembre se iniciara con los examenes del cuarto periodo.</p>
             </article>
         </section>
     </main>
