@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<!-- Declara que el documento usa la versión HTML5. -->
 <html lang="es">
 <head>
-    <!-- Define la codificación para mostrar correctamente acentos y otros caracteres. -->
     <meta charset="UTF-8">
-    <!-- Adapta el ancho y la escala de la página al dispositivo donde se abre. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Texto que aparece como título de la pestaña del navegador. -->
     <title>Instituto Nacional Ernesto Flores</title>
-    <!-- Carga los estilos visuales y la distribución definidos en style.css. -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Contenedor principal: organiza las secciones del sitio mediante la cuadrícula CSS. -->
     <main class="contenedor">
-        <!-- Encabezado con el logo, el nombre del instituto y el menú principal. -->
-        <div class="bloque bloque-1">
-            <header class="barra-navegacion">
-                <!-- La marca lleva al inicio; la imagen usa la ruta del archivo del logo. -->
-                <a class="marca-institucional" href="#inicio" aria-label="Nombre de la institución, ir al inicio">
-                    <img class="espacio-logo" src="imagenes/Logo.webp" alt="Logo del instituto">
-                    <!-- Nombre y lema que acompañan al logo. -->
-                    <span class="nombre-institucion-texto">
-                        <strong>Instituto Nacional "Ernesto Flores"</strong>
-                        <small>Comunidad educativa</small>
-                    </span>
+    <div class="bloque bloque-1">
+    <header class="barra-navegacion">
+    <a class="marca-institucional" href="#inicio" aria-label="Nombre de la institución, ir al inicio">
+    <img class="espacio-logo" src="imagenes/Logo.webp" alt="Logo del instituto">
+    <span class="nombre-institucion-texto">
+        <strong>Instituto Nacional "Ernesto Flores"</strong>
+        <small>Comunidad educativa</small>
+            </span>
                 </a>
-                <!-- Navegación: cada enlace apunta al id de una sección de esta misma página. -->
                 <nav class="menu-navegacion" aria-label="Navegación principal">
                     <details class="menu-movil">
                         <summary aria-label="Abrir menú de navegación">☰</summary>
@@ -45,16 +35,14 @@
                 </nav>
             </header>
         </div>
-        <!-- Espacios para publicar noticias y avisos de la comunidad. -->
         <section class="bloque bloque-2" id="noticias" aria-labelledby="news-title">
             <h2 id="news-title">Noticias</h2>
-            <p>El 28 de agosto se realizó un evento muy importante que fue la elección y coronación de la reina y princesa de independencia.</p>
+            <p>El 28 de agosto se realizó la elección y coronación de la reina y la princesa de independencia.</p>
             <img class="imagen-noticia" src="imagenes/Reina miss.jpeg" alt="Reina de independencia">
             <img class="imagen-noticia" src="imagenes/Princesa miss.jpeg" alt="Princesa de independencia">
-            <p>El 14 de octubre se realizó un simulacro escolar para preparar a los estudiantes por cualquier emergencia.</p>
+            <p>El 14 de octubre se realizó un simulacro escolar para preparar a los estudiantes ante cualquier emergencia.</p>
             <img class="imagen-noticia" src="imagenes/simulacro.jpeg" alt="Simulacro escolar">
         </section>
-        <!-- Portada principal: presenta el título de la institución y el carrusel. -->
         <section class="bloque bloque-3 portada" id="inicio" aria-label="Banner principal">
             <div class="contenido-portada">
                 <h1>Instituto Nacional "Ernesto Flores"</h1>
@@ -91,14 +79,13 @@
             </div>
             <span class="adorno-portada" aria-hidden="true">✳</span>
         </section>
-        <!-- Panel de calendario y contacto, enlazados desde el menú principal. -->
         <section class="bloque bloque-4 panel-contenido" id="calendarios" aria-label="Calendarios e información de contacto">
             <article class="tarjeta-informacion tarjeta-calendario" aria-labelledby="calendar-title">
                 <div class="encabezado-calendario">
                     <p class="etiqueta-seccion">ORGANIZA TU CICLO</p>
                     <h2 id="calendar-title">Calendarios</h2>
                 </div>
-                <div class="evento-calendario" aria-label="Prueba Avanzo, 27 y 28 de octubre">
+                <div class="evento-calendario" aria-label="Prueba Avanzo, 28 y 29 de octubre">
                     <div class="fechas-evento" aria-hidden="true">
                         <span class="fecha-evento">28</span>
                         <span class="fecha-evento">29</span>
@@ -106,20 +93,22 @@
                     <div class="detalle-evento">
                         <p class="etiqueta-evento">EVENTO IMPORTANTE</p>
                         <h3>Prueba Avanzo</h3>
-                        <p>La prueba Avanzo se realizará los días 28 y 29 de octubre para todos los segundos años de bachillerato.</p>
+                        <p>La prueba Avanzo se realizará los días 28 y 29 de octubre para los estudiantes de segundo año de bachillerato.</p>
                     </div>
                 </div>
             </article>
             <article class="tarjeta-informacion" id="contactos">
-                <p class="etiqueta-seccion">CONTACTATE CON NOSOTROS</p>
+                <p class="etiqueta-seccion">CONTÁCTANOS</p>
                 <h2>Contactos</h2>
-                <p><strong>Telefono:</strong> 2628-0241</p>
+                <p><strong>Teléfono:</strong> 2628-0241</p>
                 <p><strong>Correo Electrónico:</strong> 12524@clases.edu.sv</p>
                 <p><strong>Facebook:</strong> www.facebook.com/INEFOFICIAL</p>
                 <p><strong>WhatsApp:</strong> 7260-3747</p>
             </article>
         </section>
-        <!-- Resumen de las opciones de estudio y enlace a esta sección. -->
+        <audio class="audio-pagina" controls autoplay preload="metadata">
+            <source src="audio/Piano.mp3" type="audio/mpeg">
+        </audio>
         <section class="bloque bloque-5 panel-contenido" id="ofertas" aria-labelledby="offers-title">
             <div>
                 <p class="etiqueta-seccion">CONOCE TUS OPCIONES</p>
@@ -129,7 +118,7 @@
             <div class="tarjetas-ofertas">
                 <article class="tarjeta-oferta">
                     <h3>Bachillerato General</h3>
-                    <p>Esta modalidad ofrece una formación amplia en ciencias, humanidades y tecnología. El plan de estudios desarrolla conocimientos, métodos y habilidades que ayudan a construir nuevos aprendizajes y continuar estudios superiores.</p>
+                    <p>Esta modalidad ofrece una formación amplia en ciencias, humanidades y tecnología. El plan de estudios desarrolla conocimientos, métodos y habilidades que ayudan a construir nuevos aprendizajes y a continuar estudios superiores.</p>
                     <p><strong>Duración: 2 años</strong></p>
                     <details class="foto-oferta">
                         <summary class="enlace-foto-oferta">Ver fotos</summary>
@@ -149,7 +138,7 @@
                 </article>
                 <article class="tarjeta-oferta">
                     <h3>Bachillerato Técnico Administrativo Contable</h3>
-                    <p>El Bachillerato Técnico Vocacional Administrativo Contable, es un técnico de nivel medio donde adquieras conocimientos de los sistemas de control interno, Contabilidad, Administracion de los distintos sectores que conforman la economía, producto de exportación y desarrollo de actividades de su profecsion que le permitan desempeñarse en forma autónoma. Podrás desempeñarte en los siguientes ámbitos: Ventas, administración, contabilidad, caja, planillas, inventarios, call center, publicidad, control de bodegas, entre otras.</p>
+                    <p>El Bachillerato Técnico Vocacional Administrativo Contable es una opción de nivel medio en la que adquirirás conocimientos sobre sistemas de control interno, contabilidad y administración de los distintos sectores que conforman la economía. También aprenderás sobre productos de exportación y desarrollarás actividades propias de la profesión, que te permitirán desempeñarte de forma autónoma. Podrás trabajar en ventas, administración, contabilidad, caja, planillas, inventarios, centros de atención telefónica, publicidad y control de bodegas, entre otras áreas.</p>
                     <p><strong>Duración: 3 años</strong></p>
                     <details class="foto-oferta">
                         <summary class="enlace-foto-oferta">Ver fotos</summary>
@@ -169,7 +158,7 @@
                 </article>
                 <article class="tarjeta-oferta">
                     <h3>Bachillerato Técnico en Desarrollo de Software</h3> 
-                    <p>En el Bachillerato Desarrollo de Software podrás desenvolverte en ls siguientes campos: venta de soluciones de sofware, soporte para mantenimiento de aplicaciones, capacitación para el desarrollo de software, control de calidad en pruebas de aplicaciones, además podrás desarrollar aplicaciones, además podrás desarrollar aplicaciones y páginas web, diseño grafico, utilización de impresoras 3D y otros.</p>
+                    <p>En el Bachillerato en Desarrollo de Software podrás desenvolverte en los siguientes campos: venta de soluciones de software, mantenimiento y soporte de aplicaciones, capacitación para el desarrollo de software y control de calidad en pruebas de aplicaciones. Además, podrás desarrollar aplicaciones y páginas web, diseñar gráficos y utilizar impresoras 3D, entre otras actividades.</p>
                     <p><strong>Duración: 3 años</strong></p>
                     <details class="foto-oferta">
                         <summary class="enlace-foto-oferta">Ver fotos</summary>
@@ -189,7 +178,7 @@
                 </article>
                 <article class="tarjeta-oferta">
                     <h3>Bachillerato Agropecuario</h3>
-                    <p>Ofrece al estudiante conocimientos del agro en diferentes ámbitos: Cunícola, avícola, porcino, apicula, ornamentales, preparación de suelos, manejo de cultivos agroindustriales, almacenamiento, procesamiento y comercializacion de cultivos perennes, diseño y ejecución de proyectos, manejo de equipo y maquinaría agroindustrial, frutales, viiveros, huertos, procesamiento de alimentos, además se incentiva al uso de la tecnología.</p>
+                    <p>Ofrece al estudiante conocimientos agropecuarios en diferentes ámbitos: cunicultura, avicultura, porcicultura, apicultura, cultivos ornamentales, preparación de suelos, manejo de cultivos agroindustriales, almacenamiento y procesamiento de cultivos perennes, diseño y ejecución de proyectos, manejo de equipos y maquinaria agroindustrial, frutales, viveros, huertos y procesamiento de alimentos. Además, se incentiva el uso de la tecnología.</p>
                     <p><strong>Duración: 3 años</strong></p>
                     <details class="foto-oferta">
                         <summary class="enlace-foto-oferta">Ver fotos</summary>
@@ -209,95 +198,80 @@
                 </article>
             </div>
         </section>
-        <!-- Sección institucional: presenta misión, visión y valores en artículos separados. -->
         <section class="bloque bloque-6 panel-contenido identidad-contenido" aria-label="Información institucional">
-            <!-- Misión institucional. -->
             <article id="mision">
                 <p class="etiqueta-seccion">NUESTRO PROPÓSITO</p>
                 <h2>Misión</h2>
                 <p>Somos un centro educativo líder en la investigación, profesionalización y ejecución de proyectos, basado en la planificación por competencias, para mejorar su entorno ambiental, calidad, capacidad crítica y reflexiva, y transformar la sociedad, logrando una excelencia académica, calidad humana y la preparación para la vida.</p>
             </article>
-            <!-- Visión institucional. -->
             <article id="vision">
                 <p class="etiqueta-seccion">HACIA DÓNDE VAMOS</p>
                 <h2>Visión</h2>
-                <p>Ser un centro educativo líder en la organización, ambiente agradable, con tecnología innovadora, alto rendimiento académico, excelente actitud diciplinaria y competente en la investigación, profesionalización y ejecución de proyectos funcionales</p>
+                <p>Ser un centro educativo líder, con una organización eficiente, un ambiente agradable, tecnología innovadora y alto rendimiento académico; con una actitud disciplinaria ejemplar y competencias en investigación, profesionalización y ejecución de proyectos funcionales.</p>
             </article>
-            <!-- Valores que orientan a la comunidad educativa. -->
             <article id="valores">
                 <p class="etiqueta-seccion">LO QUE NOS GUÍA</p>
                 <h2>Valores</h2>
                 <ul class="lista-valores">
-                    <li><strong>Respeto:</strong> Reconcemos y valoramos a cada persona, sus ideas y su forma de ser, cuidand también el entorno y las instalaciones del instituto.</li>
+                    <li><strong>Respeto:</strong> Reconocemos y valoramos a cada persona, sus ideas y su forma de ser. También cuidamos el entorno y las instalaciones del instituto.</li>
                     <li><strong>Responsabilidad:</strong> Cumplimos con nuestros deberes de estudio y de trabajo, y respondemos por nuestras decisiones y acciones.</li>
                     <li><strong>Honestidad:</strong> Actuamos con verdad y transparencia en lo que decimos y hacemos, dentro y fuera del aula.</li>
                     <li><strong>Solidaridad:</strong> Nos apoyamos unos a otros y trabajamos en equipo para ayudar a quienes lo necesiten.</li>
                     <li><strong>Disciplina:</strong> Practicamos el orden, la constancia y la puntualidad como base para alcanzar nuestras metas académicas y técnicas.</li>
                 </ul>
             </article>
-            <!-- Ventajas institucionales; agrega aquí su descripción. -->
             <article id="ventajas">
                 <p class="etiqueta-seccion">LO QUE NOS DISTINGUE</p>
                 <h2>Ventajas</h2>
                 <ul class="lista-ventajas">
                     <li>Profesionales especializados.</li>
                     <li>Horario accesible.</li>
-                    <li>Cancha de Basketball techada.</li>
-                    <li>Huertos Escolares.</li>
-                    <li>Campo Experimental para prácticas agropecuarias.</li>
+                    <li>Cancha techada de baloncesto.</li>
+                    <li>Huertos escolares.</li>
+                    <li>Campo experimental para prácticas agropecuarias.</li>
                     <li>Sala de procesamiento de alimentos.</li>
-                    <li>Acceso a Recursos Tecnológicos e Internet.</li>
-                    <li>Actividades culturales, sociales, deportivas y Extracurriculares.</li>
+                    <li>Acceso a recursos tecnológicos e Internet.</li>
+                    <li>Actividades culturales, sociales, deportivas y extracurriculares.</li>
                 </ul>
             </article>
         </section>
-        <!-- Noticias destacadas: cada artículo representa una noticia independiente. -->
         <section class="bloque bloque-7 panel-contenido noticias-destacadas" id="noticias-destacadas" aria-labelledby="featured-title">
-            <!-- Título que identifica el conjunto de noticias. -->
             <div class="encabezado-noticias">
                 <p class="etiqueta-seccion"></p>
                 <h2 id="featured-title">Noticias destacadas</h2>
             </div>
-            <!-- Tarjeta para la primera noticia; reemplaza el título y texto por su contenido. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 1</p>
                 <h3>Elección de la reina de los estudiantes</h3>
                 <p>El día 28 de agosto se realizó el evento de elección de la reina y princesa de los estudiantes.</p>
             </article>
-            <!-- Tarjeta para la segunda noticia. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 2</p>
                 <h3>Simulacro escolar</h3>
                 <p>El día 14 de octubre se llevó a cabo el simulacro escolar para preparar a los estudiantes por si ocurre algún evento de emergencia.</p>
             </article>
-            <!-- Tarjeta para la tercera noticia. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 3</p>
-                <h3>Prueba avanzo</h3>
-                <p>El día 28 y 29 de octubre se realizó la prueba avanzo para los estudiantes de segundo año de bachillerato.</p>
+                <h3>Prueba Avanzo</h3>
+                <p>Los días 28 y 29 de octubre se realizó la prueba Avanzo para los estudiantes de segundo año de bachillerato.</p>
             </article>
-            <!-- Tarjeta para la cuarta noticia. -->
             <article class="noticia">
                 <p class="etiqueta-seccion">NOTICIA 4</p>
                 <h3>Exámenes del cuarto periodo</h3>
-                <p>El día 9 de noviembre se iniciara con los examenes del cuarto periodo.</p>
+                <p>El 9 de noviembre comenzarán los exámenes del cuarto período.</p>
             </article>
         </section>
     </main>
-    <!-- Pie de página: créditos, información del instituto y enlaces de acceso rápido. -->
     <footer class="pie-de-pagina">
-        <!-- Créditos o nombres de las personas responsables del sitio. -->
         <section class="seccion-pie" aria-labelledby="copyright-title">
             <h2 id="copyright-title">Derechos de autor</h2>
             <p>Evelyn Yasmin Lobo Hernández</p>
             <p>Karen Marcela Vasquez Rodriguez</p>
         </section>
-        <!-- Espacio para una descripción breve de la institución. -->
         <section class="seccion-pie" id="sobre-nosotros" aria-labelledby="about-title">
             <h2 id="about-title">Sobre nosotros</h2>
-            <p>Somos un centro educativo líder en la investigación y ejecución de proyectos. Busca mejorar el entorno amiental y la calidad de vida de nuestros estudiantes.</p>
+            <p>Somos un centro educativo líder en la investigación y ejecución de proyectos. Buscamos mejorar el entorno ambiental y la calidad de vida de nuestros estudiantes.</p>
         </section>
-        <!-- Enlaces de navegación repetidos para facilitar el acceso desde el pie. -->
         <nav class="seccion-pie enlaces-pie" aria-labelledby="footer-links-title">
             <h2 id="footer-links-title">Enlaces</h2>
             <a class="enlace-plataforma" href="https://classroom.google.com/" target="_blank" rel="noopener noreferrer">

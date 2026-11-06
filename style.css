@@ -429,6 +429,12 @@ body {
     box-shadow: 0 6px 14px rgba(24, 67, 91, 0.16);
 }
 
+.audio-pagina {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+}
+
 .bloque-4.panel-contenido {
     flex-direction: row;
     align-items: stretch;
@@ -451,6 +457,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    min-width: 0;
     margin-top: 12px;
     padding: 12px;
     border-left: 4px solid #0a7f99;
@@ -478,6 +485,7 @@ body {
 
 .detalle-evento {
     min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .detalle-evento .etiqueta-evento {
@@ -893,6 +901,10 @@ body {
         align-items: stretch;
     }
 
+    .bloque-4.panel-contenido article {
+        flex: 0 0 auto;
+    }
+
     .tarjetas-ofertas {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -978,6 +990,8 @@ body {
         display: grid;
         grid-template-columns: minmax(0, 1fr);
         gap: 10px;
+        width: 100%;
+        min-width: 0;
         padding: 10px;
     }
 
